@@ -4,6 +4,9 @@ A polished React calculator with a tactile clay-inspired interface, spring-anima
 
 The project focuses on making a familiar utility feel physical and delightful while keeping the implementation small, readable, and easy to extend.
 
+# Preview
+`https://burnedglitchy.github.io/Calculator/`
+
 ## Key Features
 
 - **Tactile mechanical UI** with domed keycaps, animated side-wall collapse, responsive shadows, and a warm clay housing.
