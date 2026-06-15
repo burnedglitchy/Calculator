@@ -110,10 +110,6 @@ The interface is built to feel like a small physical object rather than a flat w
 
 Keyboard input also triggers the same key animation as pointer input, so the UI remains visually connected even when operated from the keyboard.
 
-## Screenshots or Demo
-
-No screenshot is included in the repository yet. After running `npm run dev`, open the local Vite URL in a browser to view the interactive calculator.
-
 ## Development Notes
 
 - Calculator operations are implemented with explicit parsing and arithmetic logic instead of `eval()`.
