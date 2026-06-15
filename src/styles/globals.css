@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Share+Tech+Mono&display=swap');
+
+:root {
+  --font-ui:      'DM Sans', sans-serif;
+  --font-display: 'Share Tech Mono', monospace;
+
+  /* Housing */
+  --housing-base:    #F5F0E8;
+  --housing-surface: #FAF8F3;
+  --housing-rim:     #E0D5C5;
+  --housing-wall:    #C8B8A4;
+  --housing-shadow:  #A89880;
+  --housing-inset:   #D8CCBC;
+
+  /* Digit keys */
+  --key-digit:   #E2C3B0;
+  --key-digitHi: #EDD5C5;
+  --key-digitSh: #C8A090;
+  --key-digitW:  #B08870;
+
+  /* Function keys */
+  --key-fn:   #EDEBE6;
+  --key-fnHi: #FFFFFF;
+  --key-fnSh: #D4D0C8;
+  --key-fnW:  #C0BAB0;
+
+  /* Operator keys */
+  --key-op:   #D4B8E0;
+  --key-opHi: #E4CCEE;
+  --key-opSh: #B89CC8;
+  --key-opW:  #A888C0;
+
+  /* Equals key */
+  --key-eq:   #FF9F62;
+  --key-eqHi: #FFBA88;
+  --key-eqSh: #E07838;
+  --key-eqW:  #C06020;
+
+  /* Labels */
+  --key-label:   #3A2E26;
+  --key-labelAC: #CC3333;
+  --key-labelEq: #FFFFFF;
+
+  /* Display */
+  --display-bg:    #1A1C1A;
+  --display-on:    #8A9480;
+  --display-dim:   #252825;
+  --display-bezel: rgba(255,255,255,0.15);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: var(--font-ui);
+}
+
+body {
+  background: radial-gradient(ellipse at 55% 35%, #FFD4A8 0%, #FF9F62 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Remove default button styles */
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  outline: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  :root {
+    --key-gap: 8px;
+    --key-font-size: 13px;
+    --housing-padding: 16px 14px 20px;
+  }
+}
+
+@media (min-width: 481px) {
+  :root {
+    --key-gap: 10px;
+    --key-font-size: 15px;
+    --housing-padding: 20px 18px 24px;
+  }
+}
